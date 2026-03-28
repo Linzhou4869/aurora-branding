@@ -1,0 +1,5 @@
+{
+  "model_variant": "ViT-B/16",
+  "image_res": 224,
+  "batch_size": 64
+}
