@@ -1,0 +1,417 @@
+{
+  "metadata": {
+    "site": {
+      "latitude": 57.7826,
+      "longitude": 14.1618
+    },
+    "thresholds": {
+      "low_output_kw": 100.0,
+      "low_irradiance_w_m2": 200.0
+    },
+    "last_updated": "2026-03-29T09:12:54.411615",
+    "run_count": 1
+  },
+  "flagged_timestamps": [
+    {
+      "timestamp": "2026-03-29T00:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T01:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T02:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T03:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T04:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T05:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T06:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T07:00",
+      "solar_output_kw": 0.5,
+      "irradiance_w_m2": 1.0,
+      "net_power_kw": -149.5,
+      "battery_discharge_kwh": 149.5
+    },
+    {
+      "timestamp": "2026-03-29T08:00",
+      "solar_output_kw": 8.0,
+      "irradiance_w_m2": 16.0,
+      "net_power_kw": -142.0,
+      "battery_discharge_kwh": 142.0
+    },
+    {
+      "timestamp": "2026-03-29T09:00",
+      "solar_output_kw": 29.5,
+      "irradiance_w_m2": 59.0,
+      "net_power_kw": -120.5,
+      "battery_discharge_kwh": 120.5
+    },
+    {
+      "timestamp": "2026-03-29T18:00",
+      "solar_output_kw": 68.5,
+      "irradiance_w_m2": 137.0,
+      "net_power_kw": -81.5,
+      "battery_discharge_kwh": 81.5
+    },
+    {
+      "timestamp": "2026-03-29T19:00",
+      "solar_output_kw": 9.5,
+      "irradiance_w_m2": 19.0,
+      "net_power_kw": -140.5,
+      "battery_discharge_kwh": 140.5
+    },
+    {
+      "timestamp": "2026-03-29T20:00",
+      "solar_output_kw": 3.0,
+      "irradiance_w_m2": 6.0,
+      "net_power_kw": -147.0,
+      "battery_discharge_kwh": 147.0
+    },
+    {
+      "timestamp": "2026-03-29T21:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T22:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-29T23:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T00:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T01:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T02:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T03:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T04:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T05:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T06:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T07:00",
+      "solar_output_kw": 0.5,
+      "irradiance_w_m2": 1.0,
+      "net_power_kw": -149.5,
+      "battery_discharge_kwh": 149.5
+    },
+    {
+      "timestamp": "2026-03-30T08:00",
+      "solar_output_kw": 7.0,
+      "irradiance_w_m2": 14.0,
+      "net_power_kw": -143.0,
+      "battery_discharge_kwh": 143.0
+    },
+    {
+      "timestamp": "2026-03-30T09:00",
+      "solar_output_kw": 13.0,
+      "irradiance_w_m2": 26.0,
+      "net_power_kw": -137.0,
+      "battery_discharge_kwh": 137.0
+    },
+    {
+      "timestamp": "2026-03-30T10:00",
+      "solar_output_kw": 19.0,
+      "irradiance_w_m2": 38.0,
+      "net_power_kw": -131.0,
+      "battery_discharge_kwh": 131.0
+    },
+    {
+      "timestamp": "2026-03-30T11:00",
+      "solar_output_kw": 32.5,
+      "irradiance_w_m2": 65.0,
+      "net_power_kw": -117.5,
+      "battery_discharge_kwh": 117.5
+    },
+    {
+      "timestamp": "2026-03-30T12:00",
+      "solar_output_kw": 67.5,
+      "irradiance_w_m2": 135.0,
+      "net_power_kw": -82.5,
+      "battery_discharge_kwh": 82.5
+    },
+    {
+      "timestamp": "2026-03-30T17:00",
+      "solar_output_kw": 79.5,
+      "irradiance_w_m2": 159.0,
+      "net_power_kw": -70.5,
+      "battery_discharge_kwh": 70.5
+    },
+    {
+      "timestamp": "2026-03-30T18:00",
+      "solar_output_kw": 85.0,
+      "irradiance_w_m2": 170.0,
+      "net_power_kw": -65.0,
+      "battery_discharge_kwh": 65.0
+    },
+    {
+      "timestamp": "2026-03-30T19:00",
+      "solar_output_kw": 46.0,
+      "irradiance_w_m2": 92.0,
+      "net_power_kw": -104.0,
+      "battery_discharge_kwh": 104.0
+    },
+    {
+      "timestamp": "2026-03-30T20:00",
+      "solar_output_kw": 4.5,
+      "irradiance_w_m2": 9.0,
+      "net_power_kw": -145.5,
+      "battery_discharge_kwh": 145.5
+    },
+    {
+      "timestamp": "2026-03-30T21:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T22:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-30T23:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T00:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T01:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T02:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T03:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T04:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T05:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T06:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T07:00",
+      "solar_output_kw": 1.0,
+      "irradiance_w_m2": 2.0,
+      "net_power_kw": -149.0,
+      "battery_discharge_kwh": 149.0
+    },
+    {
+      "timestamp": "2026-03-31T08:00",
+      "solar_output_kw": 20.5,
+      "irradiance_w_m2": 41.0,
+      "net_power_kw": -129.5,
+      "battery_discharge_kwh": 129.5
+    },
+    {
+      "timestamp": "2026-03-31T09:00",
+      "solar_output_kw": 56.0,
+      "irradiance_w_m2": 112.0,
+      "net_power_kw": -94.0,
+      "battery_discharge_kwh": 94.0
+    },
+    {
+      "timestamp": "2026-03-31T19:00",
+      "solar_output_kw": 54.5,
+      "irradiance_w_m2": 109.0,
+      "net_power_kw": -95.5,
+      "battery_discharge_kwh": 95.5
+    },
+    {
+      "timestamp": "2026-03-31T20:00",
+      "solar_output_kw": 6.5,
+      "irradiance_w_m2": 13.0,
+      "net_power_kw": -143.5,
+      "battery_discharge_kwh": 143.5
+    },
+    {
+      "timestamp": "2026-03-31T21:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T22:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    },
+    {
+      "timestamp": "2026-03-31T23:00",
+      "solar_output_kw": 0.0,
+      "irradiance_w_m2": 0.0,
+      "net_power_kw": -150.0,
+      "battery_discharge_kwh": 150.0
+    }
+  ],
+  "summary": {
+    "total_hours_analyzed": 72,
+    "flagged_count": 51,
+    "flagged_percentage": 70.8,
+    "low_irradiance_hours": 51,
+    "consecutive_low_periods": [
+      {
+        "start": "2026-03-29T00:00",
+        "end": "2026-03-29T09:00",
+        "hours": 10,
+        "avg_irradiance": 7.6
+      },
+      {
+        "start": "2026-03-29T18:00",
+        "end": "2026-03-30T12:00",
+        "hours": 19,
+        "avg_irradiance": 23.210526315789473
+      },
+      {
+        "start": "2026-03-30T17:00",
+        "end": "2026-03-31T09:00",
+        "hours": 17,
+        "avg_irradiance": 34.411764705882355
+      },
+      {
+        "start": "2026-03-31T19:00",
+        "end": "2026-03-31T23:00",
+        "hours": 5,
+        "avg_irradiance": 24.4
+      }
+    ],
+    "power_stats": {
+      "max_output_kw": 308.5,
+      "min_output_kw": 0.0,
+      "avg_output_kw": 65.4,
+      "hours_meeting_base_load": 14
+    },
+    "battery_impact": {
+      "total_discharge_kwh": 7233.0,
+      "estimated_cycles": 28.93,
+      "degradation_impact_pct": 34.7
+    },
+    "generated_at": "2026-03-29T09:12:54.409170"
+  }
+}

@@ -1,0 +1,31 @@
+StyleSupply SMS Log - Last 48 Hours
+Export Date: 2026-03-28 22:45 GMT+8
+Contact: StyleSupply Vendor Management
+
+─────────────────────────────────────────
+[2026-03-27 09:15] StyleSupply: Hi! Quick update on your winter jacket order #SS-2847. Production is on track. Expected ship date: April 2nd. Will confirm once loaded.
+
+[2026-03-27 14:32] You: Great, thanks! All 500 units in the agreed colors?
+
+[2026-03-27 14:45] StyleSupply: Yes - 200 black, 180 navy, 120 olive. All QC passed yesterday.
+
+[2026-03-27 18:20] StyleSupply: Actually, small heads-up. One of our sewing machines went down this morning. Tech coming tomorrow. Shouldn't affect April 2nd ship date but will keep you posted.
+
+[2026-03-28 08:05] You: Appreciate the transparency. Any backup plan if the repair takes longer?
+
+[2026-03-28 08:52] StyleSupply: We've shifted remaining work to Line 3. Still confident on April 2nd. Worst case, might slip to April 3rd EOD. Will know more by noon today.
+
+[2026-03-28 11:30] StyleSupply: Good news - machine fixed faster than expected. Back to full production. April 2nd shipment confirmed. Tracking info will follow once DHL picks up.
+
+[2026-03-28 15:10] You: Perfect. ETA to our warehouse still April 5-6?
+
+[2026-03-28 15:45] StyleSupply: Yep, April 5th if customs clears smoothly. No issues expected. We'll send packing list and commercial invoice tonight.
+
+[2026-03-28 19:22] StyleSupply: Documents sent to your email. Anything else you need before weekend?
+
+[2026-03-28 20:01] You: All good. Thanks for the quick turnaround on the machine issue!
+
+[2026-03-28 20:15] StyleSupply: No problem! We know how tight your launch timeline is. Will message if anything changes. Have a great weekend!
+
+─────────────────────────────────────────
+END OF LOG

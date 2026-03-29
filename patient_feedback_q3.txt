@@ -1,0 +1,124 @@
+# Patient Feedback - Q3 2025
+# Barriers to Care Access Survey Responses
+
+---
+
+Patient ID: P10234 | Date: 2025-07-12
+"I prefer Spanish but the interpreter option didn't work on the app. Had to reschedule three times before getting someone who could help me in Spanish."
+
+---
+
+Patient ID: P10456 | Date: 2025-07-15
+"My internet kept dropping during the video call. Tried to join from my phone but the connection was too weak. Ended up missing my appointment entirely."
+
+---
+
+Patient ID: P10789 | Date: 2025-07-18
+"The only available slots were during my work hours. I can't take time off without losing pay. Why are there no evening or weekend appointments?"
+
+---
+
+Patient ID: P10891 | Date: 2025-07-22
+"I missed the bus to the clinic. There's only one bus line that goes to your location and it runs every 45 minutes. By the time the next one came, I was late for my appointment."
+
+---
+
+Patient ID: P11023 | Date: 2025-07-25
+"No hablo inglés muy bien. When I called to schedule, there was no Spanish speaker available. Had to ask my daughter to translate which made me feel uncomfortable discussing my health."
+
+---
+
+Patient ID: P11156 | Date: 2025-07-29
+"The telehealth platform requires me to download an app but my phone is too old. It won't support the latest version. I need a simpler option."
+
+---
+
+Patient ID: P11289 | Date: 2025-08-02
+"I work two jobs and the only appointment times offered were between 9am-5pm on weekdays. I literally cannot come during these hours without risking my job."
+
+---
+
+Patient ID: P11334 | Date: 2025-08-05
+"Gas prices are too high and I don't have a car. The clinic is 8 miles from my home and there's no direct public transportation. I had to pay $35 for a rideshare which I can't afford monthly."
+
+---
+
+Patient ID: P11445 | Date: 2025-08-09
+"Vietnamese interpreter was not available for my video appointment. Waited 40 minutes on hold before being told to reschedule. This has happened twice now."
+
+---
+
+Patient ID: P11567 | Date: 2025-08-12
+"My grandson helps me with technology but he was at school when my appointment started. The video call interface is too complicated for me to use alone. I'm 78 years old."
+
+---
+
+Patient ID: P11678 | Date: 2025-08-16
+"I prefer Spanish speaking doctors but was assigned to someone who only speaks English. The interpreter service through the phone had terrible audio quality and we couldn't understand each other."
+
+---
+
+Patient ID: P11789 | Date: 2025-08-19
+"The parking at the clinic costs $12 per visit. On top of my copay, this is a significant burden. There's no free parking nearby and street parking is limited to 2 hours."
+
+---
+
+Patient ID: P11890 | Date: 2025-08-23
+"I tried to join the telehealth appointment from work but my employer blocks video calling sites. Had to step outside in the parking lot but my data connection wasn't strong enough."
+
+---
+
+Patient ID: P11923 | Date: 2025-08-27
+"Childcare is my biggest barrier. I have three young children and no one to watch them during appointment hours. The clinic doesn't offer weekend slots when my partner could be home."
+
+---
+
+Patient ID: P12034 | Date: 2025-08-30
+"My internet kept dropping during the video call. This is the second time this has happened. I live in a rural area and broadband options are very limited here."
+
+---
+
+Patient ID: P12145 | Date: 2025-09-03
+"The appointment scheduler only shows availability 3 weeks out. By the time I could get in, my condition had worsened. Need more same-day or next-day slots."
+
+---
+
+Patient ID: P12256 | Date: 2025-09-07
+"I don't own a smartphone. The clinic's new check-in system requires texting a code. I had to borrow a stranger's phone just to check in. This is dehumanizing."
+
+---
+
+Patient ID: P12367 | Date: 2025-09-10
+"Bus route 47 was discontinued last month. Now I have to take two buses and walk 15 minutes in the rain to reach the clinic. My mobility issues make this nearly impossible."
+
+---
+
+Patient ID: P12478 | Date: 2025-09-14
+"Mandarin interpreter availability is very limited. Had to wait 2 weeks for an appointment just because that's when they had a Chinese speaker available. My health can't wait that long."
+
+---
+
+Patient ID: P12589 | Date: 2025-09-18
+"The only available slots were during my work hours. I'm an hourly worker - no paid time off. Took the appointment anyway and lost half a day's wages which I needed for my medication."
+
+---
+
+Patient ID: P12690 | Date: 2025-09-21
+"Technology is not my friend. The patient portal requires a password with special characters and numbers. I forget it every time. Then the password reset requires email access which I rarely check."
+
+---
+
+Patient ID: P12701 | Date: 2025-09-25
+"I missed the bus to the clinic and had to wait 50 minutes for the next one. Arrived 15 minutes late and was told I needed to reschedule. Took half a day off work for nothing."
+
+---
+
+Patient ID: P12812 | Date: 2025-09-28
+"Arabic interpreter was booked for the entire month. Was offered a phone interpreter but the connection was so poor we gave up. Feeling like my language is not valued here."
+
+---
+
+Patient ID: P12923 | Date: 2025-09-30
+"My internet kept dropping during the video call. Switched to phone call but was told the doctor only does video visits for follow-ups. Had to reschedule for an in-person visit which means taking another day off work."
+
+---

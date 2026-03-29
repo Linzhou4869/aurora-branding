@@ -1,0 +1,57 @@
+{
+  "compliance_flags": {
+    "VND-SE-001": {
+      "vendor_name": "Nordic Automotive Supplies AB",
+      "region": "Northern Europe",
+      "country": "Sweden",
+      "overall_status": "COMPLIANT",
+      "buffer_compliance": true,
+      "performance_compliance": true,
+      "override_required": false,
+      "last_checked": "2026-03-29T06:38:00+08:00",
+      "variance_percentage": -30.0,
+      "headroom_days": 3,
+      "headroom_percentage": 30.0,
+      "utilization_percentage": 70.0,
+      "risk_level": "LOW",
+      "metrics": {
+        "current_buffer_days": 7,
+        "max_allowed_buffer": 10,
+        "fuel_surcharge_rate": 0.065,
+        "on_time_delivery_rate": 0.94,
+        "average_delay_days": 1.2,
+        "quality_score": 4.6
+      },
+      "thresholds": {
+        "max_buffer_threshold": 10,
+        "min_delivery_rate": 0.90,
+        "max_delay_days": 3.0,
+        "min_quality_score": 4.0,
+        "max_fuel_surcharge": 0.08
+      },
+      "compliance_details": {
+        "buffer_status": "PASS",
+        "delivery_status": "PASS",
+        "delay_status": "PASS",
+        "quality_status": "PASS",
+        "fuel_surcharge_status": "PASS"
+      }
+    }
+  },
+  "summary": {
+    "total_vendors": 1,
+    "compliant_vendors": 1,
+    "non_compliant_vendors": 0,
+    "vendors_requiring_override": 0,
+    "compliance_rate": 1.0,
+    "average_variance": -30.0,
+    "average_risk_level": "LOW"
+  },
+  "metadata": {
+    "report_id": "COMPLIANCE-2026-03-29-001",
+    "analysis_timestamp": "2026-03-29T06:38:00+08:00",
+    "config_version": "2.1.0",
+    "next_review_date": "2026-04-05",
+    "generated_by": "OpenClaw Compliance Analyzer"
+  }
+}

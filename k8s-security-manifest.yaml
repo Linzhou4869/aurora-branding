@@ -1,0 +1,191 @@
+# Kubernetes Security Manifest
+# Autonomous Irrigation Controller - Security Baseline Enforcement
+# Generated: 2026-03-28
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: irrigation-controllers
+  labels:
+    environment: production
+    security-baseline: enforced
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: irrigation-controller
+  namespace: irrigation-controllers
+  labels:
+    app: irrigation-controller
+    version: latest
+    security: hardened
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: irrigation-controller
+  template:
+    metadata:
+      labels:
+        app: irrigation-controller
+        version: latest
+      annotations:
+        security.baseline/enforced: "true"
+    spec:
+      # Security: Host networking disabled (default is false, explicit for clarity)
+      hostNetwork: false
+      hostPID: false
+      hostIPC: false
+      
+      # Security: Run as non-root user
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+        seccompProfile:
+          type: RuntimeDefault
+      
+      containers:
+      - name: irrigation-controller
+        image: irrigation-controller:latest
+        imagePullPolicy: Always
+        
+        # Resource Limits - Security Baseline
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "1"
+            ephemeral-storage: "1Gi"
+          requests:
+            memory: "256Mi"
+            cpu: "500m"
+            ephemeral-storage: "512Mi"
+        
+        # Security Context - Container Level
+        securityContext:
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: true
+          capabilities:
+            drop:
+              - ALL
+          privileged: false
+        
+        # Ports
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+          name: http
+        - containerPort: 8443
+          protocol: TCP
+          name: https
+        
+        # Health Checks
+        livenessProbe:
+          httpGet:
+            path: /health/live
+            port: 8080
+          initialDelaySeconds: 30
+          periodSeconds: 30
+          timeoutSeconds: 5
+          failureThreshold: 3
+        
+        readinessProbe:
+          httpGet:
+            path: /health/ready
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 3
+        
+        # Environment Variables
+        env:
+        - name: ENVIRONMENT
+          value: "production"
+        - name: LOG_LEVEL
+          value: "info"
+        
+        # Volume Mounts
+        volumeMounts:
+        - name: tmp-volume
+          mountPath: /tmp
+        - name: cache-volume
+          mountPath: /var/cache
+      
+      # Volumes for read-only filesystem compatibility
+      volumes:
+      - name: tmp-volume
+        emptyDir: {}
+      - name: cache-volume
+        emptyDir: {}
+      
+      # Network Policy Reference
+      # See NetworkPolicy below for ingress/egress rules
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: irrigation-controller-service
+  namespace: irrigation-controllers
+spec:
+  selector:
+    app: irrigation-controller
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+  - name: https
+    port: 443
+    targetPort: 8443
+  type: ClusterIP
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: irrigation-controller-network-policy
+  namespace: irrigation-controllers
+spec:
+  podSelector:
+    matchLabels:
+      app: irrigation-controller
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - namespaceSelector:
+        matchLabels:
+          environment: production
+    ports:
+    - protocol: TCP
+      port: 8080
+    - protocol: TCP
+      port: 8443
+  egress:
+  - to:
+    - namespaceSelector:
+        matchLabels:
+          environment: production
+    ports:
+    - protocol: TCP
+      port: 443
+    - protocol: TCP
+      port: 53
+    - protocol: UDP
+      port: 53
+
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: irrigation-controller-pdb
+  namespace: irrigation-controllers
+spec:
+  minAvailable: 2
+  selector:
+    matchLabels:
+      app: irrigation-controller

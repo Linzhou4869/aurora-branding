@@ -1,0 +1,49 @@
+{
+  "analysis_timestamp": "2026-03-29T10:45:04.996537",
+  "threshold_g": 0.3,
+  "total_structures": 5,
+  "compliant_count": 3,
+  "non_compliant_count": 2,
+  "compliance_rate": "60.0%",
+  "non_compliant_details": [
+    {
+      "Structure_ID": "ST42-B4",
+      "Floor_Level": "Level_50",
+      "Calculated_PGA": 0.35,
+      "Zone_Safety_Factor": 1.2,
+      "Violation": 0.04999999999999999,
+      "Violation_Percent": 16.666666666666664
+    },
+    {
+      "Structure_ID": "ST42-A1",
+      "Floor_Level": "Level_40",
+      "Calculated_PGA": 0.32,
+      "Zone_Safety_Factor": 1.15,
+      "Violation": 0.020000000000000018,
+      "Violation_Percent": 6.666666666666673
+    }
+  ],
+  "compliant_details": [
+    {
+      "Structure_ID": "ST42-A1",
+      "Floor_Level": "Level_10",
+      "Calculated_PGA": 0.25,
+      "Zone_Safety_Factor": 1.05,
+      "Margin": 0.04999999999999999
+    },
+    {
+      "Structure_ID": "ST42-B4",
+      "Floor_Level": "Level_15",
+      "Calculated_PGA": 0.27,
+      "Zone_Safety_Factor": 1.08,
+      "Margin": 0.02999999999999997
+    },
+    {
+      "Structure_ID": "ST42-C9",
+      "Floor_Level": "Level_20",
+      "Calculated_PGA": 0.28,
+      "Zone_Safety_Factor": 1.1,
+      "Margin": 0.019999999999999962
+    }
+  ]
+}

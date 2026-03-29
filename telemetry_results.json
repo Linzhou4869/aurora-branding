@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-03-28T14:12:49.400358Z",
+  "firmware_validation": {
+    "target": "Autonomous Irrigation Controller",
+    "sample_count": 5
+  },
+  "latency_metrics": {
+    "mean_ms": 195,
+    "std_dev_ms": 63.44,
+    "min_ms": 150,
+    "max_ms": 300,
+    "threshold_ms": 200
+  },
+  "packet_loss_metrics": {
+    "mean_pct": 0.19,
+    "values_pct": [
+      0.1,
+      0.2,
+      0.05,
+      0.1,
+      0.5
+    ],
+    "threshold_pct": 0.3
+  },
+  "anomalies": {
+    "latency": [
+      {
+        "index": 2,
+        "latency_ms": 210,
+        "severity": "WARNING"
+      },
+      {
+        "index": 4,
+        "latency_ms": 300,
+        "severity": "CRITICAL"
+      }
+    ],
+    "packet_loss": [
+      {
+        "index": 4,
+        "packet_loss_pct": 0.5,
+        "severity": "CRITICAL"
+      }
+    ],
+    "correlated_failures": [
+      {
+        "index": 4,
+        "latency_ms": 300,
+        "packet_loss_pct": 0.5,
+        "severity": "CRITICAL"
+      }
+    ],
+    "total_critical": 2,
+    "total_correlated": 1
+  },
+  "health_status": "DEGRADED",
+  "recommendation": "Firmware requires attention"
+}

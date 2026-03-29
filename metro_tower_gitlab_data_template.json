@@ -1,0 +1,57 @@
+{
+  "_metadata": {
+    "project": "Metro Tower",
+    "audit_type": "Q4 Safety Compliance Audit",
+    "data_extraction_date": "2026-03-29",
+    "extracted_by": "Carlos Ramirez",
+    "source": "gitlab.ramirez-construction.local/projects/metro-tower"
+  },
+  "merge_requests": [
+    {
+      "id": "MR-###",
+      "title": "",
+      "author": "",
+      "created_date": "YYYY-MM-DD",
+      "status": "open|merged|closed",
+      "labels": ["safety-protocols", "site-configurations", ""],
+      "description": "",
+      "changes_summary": "",
+      "files_modified": [""],
+      "reviewers": [""],
+      "approval_status": "pending|approved|rejected",
+      "comments_count": 0,
+      "pipeline_status": "pending|passed|failed"
+    }
+  ],
+  "commits": [
+    {
+      "sha": "abc1234",
+      "author": "",
+      "date": "YYYY-MM-DD",
+      "message": "",
+      "branch": "",
+      "files_changed": [""],
+      "related_mr": "MR-###"
+    }
+  ],
+  "branches": [
+    {
+      "name": "",
+      "last_commit_date": "YYYY-MM-DD",
+      "ahead_of_main": 0,
+      "behind_main": 0,
+      "protected": true|false,
+      "related_to_safety": true|false
+    }
+  ],
+  "pending_reviews": [
+    {
+      "type": "merge_request|commit",
+      "id": "",
+      "reviewer_assigned": "",
+      "days_pending": 0,
+      "blocking_issues": [""],
+      "safety_impact": "high|medium|low"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "vendors": {
+    "VND-SE-001": {
+      "name": "Nordic Automotive Supplies AB",
+      "region": "Northern Europe",
+      "country": "Sweden",
+      "current_buffer_days": 7,
+      "max_allowed_buffer": 10,
+      "manual_override": false,
+      "last_updated": "2026-03-29",
+      "lead_time_profile": {
+        "standard_transit": 4,
+        "expedited_transit": 2,
+        "customs_clearance": 1
+      },
+      "fuel_surcharge_rate": 0.065,
+      "performance_metrics": {
+        "on_time_delivery_rate": 0.94,
+        "average_delay_days": 1.2,
+        "quality_score": 4.6
+      }
+    }
+  },
+  "metadata": {
+    "config_version": "2.1.0",
+    "last_review": "2025-Q4",
+    "next_review": "2026-Q1"
+  }
+}

@@ -1,0 +1,29 @@
+Patient_ID,Visit_Type,Condition,A1C_Result,BP_Reading,FollowUp_Adherence,Notes
+P10234,virtual,Diabetes,8.2,138/88,missed,Language barrier - Spanish interpreter requested
+P10456,virtual,Hypertension,7.1,152/94,missed,Connection issues during appointment
+P10789,in-person,Diabetes,7.8,142/90,adherent,Scheduled outside work hours
+P10891,in-person,Hypertension,6.9,148/92,missed,Transportation delay - bus issue
+P11023,virtual,Diabetes,8.5,145/89,missed,Spanish interpreter unavailable
+P11156,virtual,Hypertension,7.3,139/87,partial,Technology barrier - old phone
+P11289,in-person,Diabetes,7.6,141/88,missed,Work schedule conflict
+P11334,in-person,Hypertension,7.0,155/96,adherent,Transportation cost burden noted
+P11445,virtual,Diabetes,8.1,143/91,missed,Vietnamese interpreter delay
+P11567,virtual,Hypertension,6.8,136/84,partial,Technology assistance needed
+P11678,in-person,Diabetes,7.9,147/93,adherent,Spanish interpreter audio issues
+P11789,in-person,Hypertension,7.2,151/95,missed,Parking cost concern raised
+P11890,virtual,Diabetes,8.3,144/89,missed,Work network blocks telehealth
+P11923,in-person,Hypertension,6.7,138/86,missed,Childcare barrier mentioned
+P12034,virtual,Diabetes,8.0,140/88,partial,Rural internet connectivity issues
+P12145,in-person,Hypertension,7.4,149/94,adherent,Appointment availability delay
+P12256,virtual,Diabetes,7.7,142/90,missed,No smartphone - check-in issues
+P12367,in-person,Hypertension,7.1,153/97,missed,Public transportation route changed
+P12478,virtual,Diabetes,8.4,146/92,missed,Mandarin interpreter wait time
+P12589,in-person,Hypertension,6.9,137/85,adherent,Work wage loss for appointment
+P12690,virtual,Diabetes,7.5,141/89,partial,Portal password reset issues
+P12701,in-person,Hypertension,7.3,150/95,missed,Bus delay caused late arrival
+P12812,virtual,Diabetes,8.6,148/94,missed,Arabic interpreter unavailable
+P12923,virtual,Hypertension,7.0,144/91,missed,Video call technical failure
+P13034,in-person,Diabetes,7.8,143/88,adherent,No barriers reported
+P13145,virtual,Hypertension,6.8,135/83,adherent,Smooth telehealth experience
+P13256,in-person,Diabetes,8.1,145/90,partial,Minor scheduling difficulty
+P13367,virtual,Hypertension,7.2,147/93,missed,Audio quality issues on call

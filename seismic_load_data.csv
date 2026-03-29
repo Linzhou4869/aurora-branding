@@ -1,0 +1,6 @@
+Structure_ID,Floor_Level,Calculated_PGA(g),Zone_Safety_Factor
+ST42-A1,Level_10,0.25,1.05
+ST42-A1,Level_40,0.32,1.15
+ST42-B4,Level_15,0.27,1.08
+ST42-B4,Level_50,0.35,1.20
+ST42-C9,Level_20,0.28,1.10
