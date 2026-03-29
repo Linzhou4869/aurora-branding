@@ -1,0 +1,40 @@
+2026-03-29 15:58:33,452 - POApprovalWorkflow - INFO - PO Approval Workflow Engine initialized
+2026-03-29 15:58:33,473 - POApprovalWorkflow - INFO - Inserted record into purchase_orders: PO-2026-001
+2026-03-29 15:58:33,476 - POApprovalWorkflow - INFO - Inserted record into purchase_orders: PO-2026-002
+2026-03-29 15:58:33,478 - POApprovalWorkflow - INFO - Inserted record into purchase_orders: PO-2026-003
+2026-03-29 15:58:33,479 - POApprovalWorkflow - INFO - Submitting PO PO-2026-001 for approval
+2026-03-29 15:58:33,482 - POApprovalWorkflow - INFO - Updated record in purchase_orders: PO-2026-001
+2026-03-29 15:58:33,485 - POApprovalWorkflow - INFO - Inserted record into approval_audit_log: 95651d92-1484-4511-9fcc-d9106423e764
+2026-03-29 15:58:33,493 - POApprovalWorkflow - INFO - Inserted record into approval_signatures: b936a188-949f-4216-88a4-d35eefba31c0
+2026-03-29 15:58:33,617 - POApprovalWorkflow - INFO - Inserted record into notification_drafts: 12cc3276-d786-46a3-8083-3bd1f702408b
+2026-03-29 15:58:33,620 - POApprovalWorkflow - INFO - Inserted record into approval_audit_log: af15edfa-e542-4703-b0e0-edffa022dcb5
+2026-03-29 15:58:33,623 - POApprovalWorkflow - INFO - Updated record in purchase_orders: PO-2026-001
+2026-03-29 15:58:33,623 - POApprovalWorkflow - INFO - PO PO-2026-001 submitted for approval. Tier: TIER_1, Signatures required: 1, Dual signature: False
+2026-03-29 15:58:33,623 - POApprovalWorkflow - INFO - Submitting PO PO-2026-002 for approval
+2026-03-29 15:58:33,628 - POApprovalWorkflow - INFO - Updated record in purchase_orders: PO-2026-002
+2026-03-29 15:58:33,631 - POApprovalWorkflow - INFO - Inserted record into approval_audit_log: ba29e94c-3a75-4f32-a070-445ffb1a7c7a
+2026-03-29 15:58:33,634 - POApprovalWorkflow - INFO - Inserted record into approval_signatures: 9976da7d-2320-49a0-bde2-ed4a47fc0882
+2026-03-29 15:58:33,637 - POApprovalWorkflow - INFO - Inserted record into notification_drafts: 4928875e-f68f-404f-8e7c-8fedf37d023a
+2026-03-29 15:58:33,640 - POApprovalWorkflow - INFO - Inserted record into approval_audit_log: ae57d803-a3ae-42bb-ab11-5d06a0420697
+2026-03-29 15:58:33,643 - POApprovalWorkflow - INFO - Inserted record into approval_signatures: 06909c6b-cceb-4fbc-96c5-3e3f6e5c0fce
+2026-03-29 15:58:33,646 - POApprovalWorkflow - INFO - Updated record in purchase_orders: PO-2026-002
+2026-03-29 15:58:33,646 - POApprovalWorkflow - INFO - PO PO-2026-002 submitted for approval. Tier: TIER_2, Signatures required: 2, Dual signature: True
+2026-03-29 15:58:33,646 - POApprovalWorkflow - INFO - Submitting PO PO-2026-003 for approval
+2026-03-29 15:58:33,649 - POApprovalWorkflow - INFO - Updated record in purchase_orders: PO-2026-003
+2026-03-29 15:58:33,652 - POApprovalWorkflow - INFO - Inserted record into approval_audit_log: 9e7191f8-a30f-4e51-b81a-53414c2007c8
+2026-03-29 15:58:33,655 - POApprovalWorkflow - INFO - Inserted record into approval_signatures: 7e52d317-e824-4e9a-a502-618640d98f75
+2026-03-29 15:58:33,659 - POApprovalWorkflow - INFO - Inserted record into notification_drafts: a13645bd-e4de-406e-948d-6801d7dfcee3
+2026-03-29 15:58:33,661 - POApprovalWorkflow - INFO - Inserted record into approval_audit_log: 81b3e50b-756a-4816-916f-0e122f6e1ee3
+2026-03-29 15:58:33,664 - POApprovalWorkflow - INFO - Inserted record into approval_signatures: 1f622094-62ba-477d-aaf4-fdda00c86963
+2026-03-29 15:58:33,667 - POApprovalWorkflow - INFO - Inserted record into approval_signatures: 31c072dc-f7f0-4fd6-aec7-d1efa02352f1
+2026-03-29 15:58:33,669 - POApprovalWorkflow - INFO - Updated record in purchase_orders: PO-2026-003
+2026-03-29 15:58:33,669 - POApprovalWorkflow - INFO - PO PO-2026-003 submitted for approval. Tier: TIER_3, Signatures required: 3, Dual signature: True
+2026-03-29 15:58:33,670 - POApprovalWorkflow - INFO - Checking for pending POs requiring reminders/escalations
+2026-03-29 15:58:51,347 - POApprovalWorkflow - INFO - PO Approval Workflow Engine initialized
+2026-03-29 15:58:51,353 - POApprovalWorkflow - INFO - Inserted record into purchase_orders: PO-2026-001
+2026-03-29 15:58:51,355 - POApprovalWorkflow - INFO - Inserted record into purchase_orders: PO-2026-002
+2026-03-29 15:58:51,358 - POApprovalWorkflow - INFO - Inserted record into purchase_orders: PO-2026-003
+2026-03-29 15:58:51,358 - POApprovalWorkflow - INFO - Submitting PO PO-2026-001 for approval
+2026-03-29 15:58:51,359 - POApprovalWorkflow - INFO - Submitting PO PO-2026-002 for approval
+2026-03-29 15:58:51,360 - POApprovalWorkflow - INFO - Submitting PO PO-2026-003 for approval
+2026-03-29 15:58:51,360 - POApprovalWorkflow - INFO - Checking for pending POs requiring reminders/escalations

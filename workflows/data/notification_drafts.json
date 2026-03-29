@@ -1,0 +1,62 @@
+[
+  {
+    "id": "12cc3276-d786-46a3-8083-3bd1f702408b",
+    "template_id": "PO_APPROVAL_REQUEST",
+    "recipient_ids": [
+      "IT-MGR-001"
+    ],
+    "cc_ids": [],
+    "subject": "Action Required: Purchase Order PO-2026-001 Approval ($25,000.00)",
+    "body": "Dear Department Manager,\n\nA purchase order requires your approval.\n\nPO Details:\n- PO ID: PO-2026-001\n- Vendor: VND-001\n- Amount: USD $25,000.00\n- Department: IT\n- Submitted By: USER-001\n- Submitted At: 2026-03-29T07:58:33.479815\n\nApproval Required By: 2026-03-31\n\nPlease review and approve/reject at: https://procurement.[COMPANY].com/approve/PO-2026-001\n\nThis is an automated notification. Do not reply to this email.\n\n---\nProcurement Workflow System",
+    "channel": "email",
+    "priority": "high",
+    "po_id": "PO-2026-001",
+    "created_at": "2026-03-29T07:58:33.494199",
+    "sent_at": null,
+    "metadata": {
+      "signature_order": 1,
+      "approval_tier": 1,
+      "sla_deadline": "2026-03-31"
+    }
+  },
+  {
+    "id": "4928875e-f68f-404f-8e7c-8fedf37d023a",
+    "template_id": "PO_APPROVAL_REQUEST",
+    "recipient_ids": [
+      "OPS-MGR-001"
+    ],
+    "cc_ids": [],
+    "subject": "Action Required: Purchase Order PO-2026-002 Approval ($75,000.00)",
+    "body": "Dear Department Manager,\n\nA purchase order requires your approval.\n\nPO Details:\n- PO ID: PO-2026-002\n- Vendor: VND-002\n- Amount: USD $75,000.00\n- Department: Operations\n- Submitted By: USER-002\n- Submitted At: 2026-03-29T07:58:33.624863\n\nApproval Required By: 2026-04-03\n\nPlease review and approve/reject at: https://procurement.[COMPANY].com/approve/PO-2026-002\n\nThis is an automated notification. Do not reply to this email.\n\n---\nProcurement Workflow System",
+    "channel": "email",
+    "priority": "high",
+    "po_id": "PO-2026-002",
+    "created_at": "2026-03-29T07:58:33.634846",
+    "sent_at": null,
+    "metadata": {
+      "signature_order": 1,
+      "approval_tier": 2,
+      "sla_deadline": "2026-04-03"
+    }
+  },
+  {
+    "id": "a13645bd-e4de-406e-948d-6801d7dfcee3",
+    "template_id": "PO_APPROVAL_REQUEST",
+    "recipient_ids": [
+      "PROC-MGR-001"
+    ],
+    "cc_ids": [],
+    "subject": "Action Required: Purchase Order PO-2026-003 Approval ($300,000.00)",
+    "body": "Dear Department Manager,\n\nA purchase order requires your approval.\n\nPO Details:\n- PO ID: PO-2026-003\n- Vendor: VND-003\n- Amount: USD $300,000.00\n- Department: Procurement\n- Submitted By: USER-003\n- Submitted At: 2026-03-29T07:58:33.647347\n\nApproval Required By: 2026-04-05\n\nPlease review and approve/reject at: https://procurement.[COMPANY].com/approve/PO-2026-003\n\nThis is an automated notification. Do not reply to this email.\n\n---\nProcurement Workflow System",
+    "channel": "email",
+    "priority": "high",
+    "po_id": "PO-2026-003",
+    "created_at": "2026-03-29T07:58:33.656269",
+    "sent_at": null,
+    "metadata": {
+      "signature_order": 1,
+      "approval_tier": 3,
+      "sla_deadline": "2026-04-05"
+    }
+  }
+]

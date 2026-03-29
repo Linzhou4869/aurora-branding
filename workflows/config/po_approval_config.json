@@ -1,0 +1,271 @@
+{
+  "workflow": {
+    "name": "Purchase Order Approval Workflow",
+    "version": "1.0",
+    "effective_date": "2026-04-01",
+    "description": "Automated approval workflow for purchase orders with dual-signature requirements"
+  },
+  "thresholds": {
+    "tier_1": {
+      "name": "Single Signature",
+      "min_amount": 0,
+      "max_amount": 50000,
+      "required_signatures": 1,
+      "approver_roles": ["department_manager"],
+      "sla_days": 2
+    },
+    "tier_2": {
+      "name": "Dual Signature",
+      "min_amount": 50001,
+      "max_amount": 250000,
+      "required_signatures": 2,
+      "approver_roles": ["department_manager", "finance_director"],
+      "sla_days": 5
+    },
+    "tier_3": {
+      "name": "Executive Approval",
+      "min_amount": 250001,
+      "max_amount": null,
+      "required_signatures": 3,
+      "approver_roles": ["department_manager", "finance_director", "cfo"],
+      "sla_days": 7
+    }
+  },
+  "trigger": {
+    "condition": "amount > 50000",
+    "table": "purchase_orders",
+    "fields": ["id", "vendor_id", "amount", "status", "approval_signatures"],
+    "polling_interval_seconds": 60,
+    "batch_size": 100
+  },
+  "states": {
+    "DRAFT": {
+      "description": "PO being prepared",
+      "allowed_transitions": ["PENDING_APPROVAL", "CANCELLED"],
+      "allowed_actions": ["submit", "cancel"]
+    },
+    "PENDING_APPROVAL": {
+      "description": "Awaiting workflow assignment",
+      "allowed_transitions": ["WAITING_FIRST_SIG", "APPROVED", "CANCELLED"],
+      "allowed_actions": ["auto_assign"]
+    },
+    "WAITING_FIRST_SIG": {
+      "description": "First approver reviewing",
+      "allowed_transitions": ["WAITING_SECOND_SIG", "APPROVED", "REJECTED"],
+      "allowed_actions": ["approve", "reject", "delegate"]
+    },
+    "WAITING_SECOND_SIG": {
+      "description": "Second approver reviewing",
+      "allowed_transitions": ["APPROVED", "REJECTED"],
+      "allowed_actions": ["approve", "reject", "delegate"]
+    },
+    "APPROVED": {
+      "description": "All signatures obtained",
+      "allowed_transitions": ["RELEASED"],
+      "allowed_actions": ["release"]
+    },
+    "RELEASED": {
+      "description": "PO sent to vendor",
+      "allowed_transitions": [],
+      "allowed_actions": [],
+      "terminal": true
+    },
+    "REJECTED": {
+      "description": "Approval denied",
+      "allowed_transitions": ["DRAFT", "CANCELLED"],
+      "allowed_actions": ["revise", "cancel"]
+    },
+    "CANCELLED": {
+      "description": "PO cancelled",
+      "allowed_transitions": [],
+      "allowed_actions": [],
+      "terminal": true
+    }
+  },
+  "approvers": {
+    "roles": {
+      "department_manager": {
+        "title": "Department Manager",
+        "backup_role": "senior_team_lead",
+        "delegation_allowed": true,
+        "default_approvers": {
+          "procurement": "PROC-MGR-001",
+          "operations": "OPS-MGR-001",
+          "it": "IT-MGR-001",
+          "marketing": "MKT-MGR-001",
+          "rd": "RD-MGR-001"
+        }
+      },
+      "finance_director": {
+        "title": "Finance Director",
+        "backup_role": "finance_manager",
+        "delegation_allowed": true,
+        "default_approvers": {
+          "default": "FINANCE-001"
+        },
+        "backup_approvers": {
+          "default": "FINANCE-002"
+        }
+      },
+      "cfo": {
+        "title": "Chief Financial Officer",
+        "backup_role": null,
+        "delegation_allowed": false,
+        "default_approvers": {
+          "default": "CFO-001"
+        },
+        "backup_approvers": {
+          "default": "CEO-001"
+        }
+      },
+      "senior_team_lead": {
+        "title": "Senior Team Lead",
+        "backup_role": null,
+        "delegation_allowed": false
+      },
+      "finance_manager": {
+        "title": "Finance Manager",
+        "backup_role": null,
+        "delegation_allowed": false
+      }
+    }
+  },
+  "notifications": {
+    "templates": {
+      "PO_APPROVAL_REQUEST": {
+        "subject": "Action Required: Purchase Order ${po_id} Approval (${amount})",
+        "recipients": ["assigned_approver"],
+        "cc": [],
+        "channel": "email",
+        "priority": "high"
+      },
+      "PO_APPROVAL_REMINDER": {
+        "subject": "Reminder: Purchase Order ${po_id} Approval Pending",
+        "recipients": ["assigned_approver"],
+        "cc": [],
+        "channel": "email",
+        "priority": "normal"
+      },
+      "PO_APPROVAL_ESCALATION": {
+        "subject": "ESCALATION: Purchase Order ${po_id} Approval Overdue",
+        "recipients": ["assigned_approver", "approver_manager"],
+        "cc": ["finance_director"],
+        "channel": "email_sms",
+        "priority": "urgent"
+      },
+      "PO_APPROVAL_COMPLETED": {
+        "subject": "Approved: Purchase Order ${po_id}",
+        "recipients": ["po_creator", "finance_team"],
+        "cc": [],
+        "channel": "email",
+        "priority": "normal"
+      },
+      "PO_REJECTED": {
+        "subject": "Rejected: Purchase Order ${po_id}",
+        "recipients": ["po_creator", "department_manager"],
+        "cc": [],
+        "channel": "email",
+        "priority": "high"
+      }
+    },
+    "escalation": {
+      "reminder_at_sla_percentage": 50,
+      "warning_at_sla_percentage": 75,
+      "escalate_at_sla_percentage": 100,
+      "auto_delegate_at_sla_percentage": 150
+    },
+    "channels": {
+      "email": {
+        "enabled": true,
+        "smtp_config_key": "email_smtp"
+      },
+      "sms": {
+        "enabled": true,
+        "provider": "twilio",
+        "config_key": "sms_twilio"
+      },
+      "in_app": {
+        "enabled": true
+      }
+    }
+  },
+  "sla": {
+    "tier_1": {
+      "first_signature_days": 2,
+      "total_days": 2
+    },
+    "tier_2": {
+      "first_signature_days": 2,
+      "second_signature_days": 3,
+      "total_days": 5
+    },
+    "tier_3": {
+      "first_signature_days": 2,
+      "second_signature_days": 3,
+      "third_signature_days": 2,
+      "total_days": 7
+    },
+    "business_hours_only": true,
+    "timezone": "UTC"
+  },
+  "audit": {
+    "enabled": true,
+    "retention_years": 7,
+    "log_events": [
+      "po_created",
+      "approval_requested",
+      "signature_applied",
+      "approval_delegated",
+      "rejected",
+      "status_changed",
+      "escalation_triggered",
+      "auto_delegate"
+    ],
+    "capture_fields": [
+      "user_id",
+      "user_role",
+      "timestamp",
+      "ip_address",
+      "old_value",
+      "new_value",
+      "metadata"
+    ]
+  },
+  "database": {
+    "connection_key": "primary_db",
+    "tables": {
+      "purchase_orders": "purchase_orders",
+      "approval_signatures": "approval_signatures",
+      "approval_audit_log": "approval_audit_log",
+      "approvers": "approvers",
+      "notifications": "notifications"
+    }
+  },
+  "error_handling": {
+    "retry": {
+      "max_attempts": 3,
+      "backoff_multiplier": 2,
+      "initial_delay_seconds": 5
+    },
+    "alerts": {
+      "critical": {
+        "condition": "system_down_minutes > 60",
+        "recipients": ["it_ops", "finance_director"]
+      },
+      "high": {
+        "condition": "po_stuck_minutes > sla_minutes * 1.5",
+        "recipients": ["department_manager"]
+      },
+      "medium": {
+        "condition": "backup_approver_used",
+        "recipients": ["finance", "procurement"]
+      }
+    }
+  },
+  "security": {
+    "signature_validation": true,
+    "ip_whitelist_enabled": false,
+    "mfa_required_for_approval": true,
+    "session_timeout_minutes": 30
+  }
+}

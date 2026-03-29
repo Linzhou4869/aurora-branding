@@ -1,0 +1,98 @@
+[
+  {
+    "id": "95651d92-1484-4511-9fcc-d9106423e764",
+    "purchase_order_id": "PO-2026-001",
+    "event_type": "po_submitted_for_approval",
+    "user_id": "SYSTEM",
+    "user_role": null,
+    "old_value": "DRAFT",
+    "new_value": "PENDING_APPROVAL",
+    "metadata": {
+      "amount": 25000.0,
+      "tier": "TIER_1",
+      "requires_dual_signature": false
+    },
+    "ip_address": null,
+    "created_at": "2026-03-29T07:58:33.482532"
+  },
+  {
+    "id": "af15edfa-e542-4703-b0e0-edffa022dcb5",
+    "purchase_order_id": "PO-2026-001",
+    "event_type": "notification_draft_created",
+    "user_id": "SYSTEM",
+    "user_role": null,
+    "old_value": null,
+    "new_value": null,
+    "metadata": {
+      "draft_id": "12cc3276-d786-46a3-8083-3bd1f702408b",
+      "template": "PO_APPROVAL_REQUEST",
+      "recipient": "IT-MGR-001"
+    },
+    "ip_address": null,
+    "created_at": "2026-03-29T07:58:33.617188"
+  },
+  {
+    "id": "ba29e94c-3a75-4f32-a070-445ffb1a7c7a",
+    "purchase_order_id": "PO-2026-002",
+    "event_type": "po_submitted_for_approval",
+    "user_id": "SYSTEM",
+    "user_role": null,
+    "old_value": "DRAFT",
+    "new_value": "PENDING_APPROVAL",
+    "metadata": {
+      "amount": 75000.0,
+      "tier": "TIER_2",
+      "requires_dual_signature": true
+    },
+    "ip_address": null,
+    "created_at": "2026-03-29T07:58:33.628109"
+  },
+  {
+    "id": "ae57d803-a3ae-42bb-ab11-5d06a0420697",
+    "purchase_order_id": "PO-2026-002",
+    "event_type": "notification_draft_created",
+    "user_id": "SYSTEM",
+    "user_role": null,
+    "old_value": null,
+    "new_value": null,
+    "metadata": {
+      "draft_id": "4928875e-f68f-404f-8e7c-8fedf37d023a",
+      "template": "PO_APPROVAL_REQUEST",
+      "recipient": "OPS-MGR-001"
+    },
+    "ip_address": null,
+    "created_at": "2026-03-29T07:58:33.637773"
+  },
+  {
+    "id": "9e7191f8-a30f-4e51-b81a-53414c2007c8",
+    "purchase_order_id": "PO-2026-003",
+    "event_type": "po_submitted_for_approval",
+    "user_id": "SYSTEM",
+    "user_role": null,
+    "old_value": "DRAFT",
+    "new_value": "PENDING_APPROVAL",
+    "metadata": {
+      "amount": 300000.0,
+      "tier": "TIER_3",
+      "requires_dual_signature": true
+    },
+    "ip_address": null,
+    "created_at": "2026-03-29T07:58:33.649965"
+  },
+  {
+    "id": "81b3e50b-756a-4816-916f-0e122f6e1ee3",
+    "purchase_order_id": "PO-2026-003",
+    "event_type": "notification_draft_created",
+    "user_id": "SYSTEM",
+    "user_role": null,
+    "old_value": null,
+    "new_value": null,
+    "metadata": {
+      "draft_id": "a13645bd-e4de-406e-948d-6801d7dfcee3",
+      "template": "PO_APPROVAL_REQUEST",
+      "recipient": "PROC-MGR-001"
+    },
+    "ip_address": null,
+    "created_at": "2026-03-29T07:58:33.659121"
+  }
+]
